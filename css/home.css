@@ -1,0 +1,137 @@
+section {
+  justify-content: center;
+  align-items: center;
+}
+
+.section-1 {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("https://images.unsplash.com/photo-1585861055747-bd1c35fb47d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2360&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.messaging div {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 7%;
+  padding-bottom: 5%;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.section-1 .welcome-box {
+  /* text-align: center; */
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 40%;
+}
+
+.section-2 {
+  height: 100vh;
+  /* background-color: purple; */
+  background-size: cover;
+}
+
+.showcase div div {
+  justify-content: center;
+  align-items: center;
+}
+
+#signup div div {
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+}
+
+.iframe-container {
+  position: relative;
+  justify-content: center;
+  width: 70%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  #signup {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .messaging div {
+    max-width: 90%;
+  }
+}
+
+.carousl,
+.carousel-innr,
+.carousel-inner > .carousel-item {
+  overflow: hidden;
+}
+.carousel-inner > .carousel-item.active,
+.carousel-inner > .carousel-item-next {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.carousel-inner:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 72%;
+  left: 0;
+  content: "";
+  display: block;
+  background-color: #fff;
+  z-index: 2;
+}
+.carousel-inner:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 72%;
+  content: "";
+  display: block;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.carousel-control-prev {
+  z-index: 2000;
+  left: 22%;
+}
+
+.carousel-control-next {
+  z-index: 2000;
+  right: 22%;
+}
